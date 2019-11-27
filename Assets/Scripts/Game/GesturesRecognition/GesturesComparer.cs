@@ -51,6 +51,14 @@ namespace GesturesRecognition
                 // browse defined gesture
                 for (int j = 0; j < definedGesture.Length; j++)
                 {
+                    int indexUserGesture = deltaPosition + j;
+
+                    // avoid out of bounds index
+                    if (indexUserGesture >= definedGesture.Length)
+                    {
+                        break;
+                    }
+
                     // do defined gesture match w/ userGesture ?
                     if (userGesture[deltaPosition + j] == definedGesture[j])
                     {
