@@ -21,8 +21,8 @@ public class Wand : Singleton<Wand>
     private bool _hasBeenReleased = false;
     private bool _triggerPressedLastFrame = false;
 
-    private Vector3 _localOriginPosition;
-    private Quaternion _localOriginRotation;
+    private Vector3 _originPosition;
+    private Quaternion _originRotation;
 
     private Transform _gestureRecordTransform; // transform that'll be used to record gesture
 
@@ -101,15 +101,13 @@ public class Wand : Singleton<Wand>
         yield return new WaitForEndOfFrame();
 
         // set parent to headset
-        transform.parent = VRTK_DeviceFinder.PlayAreaTransform();
-
-        _localOriginPosition = transform.localPosition;
-        _localOriginRotation = transform.rotation;
+        _originPosition = transform.position;
+        _originRotation = transform.rotation;
     }
 
     void Update()
     {
-        CheckForRespawnOnBelt();
+        CheckForRespawn();
         ManageGestureRecording();
     }
     #endregion
@@ -204,7 +202,7 @@ public class Wand : Singleton<Wand>
     #endregion
 
     #region Belt respawn Methods
-    void CheckForRespawnOnBelt()
+    void CheckForRespawn()
     {
         if (_hasBeenReleased)
         {
@@ -212,21 +210,21 @@ public class Wand : Singleton<Wand>
 
             if (_timeSinceReleased >= _respawnTime)
             {
-                RespawnOnBelt();
+                Respawn();
             }
         }
     }
 
-    void RespawnOnBelt()
+    void Respawn()
     {
         _hasBeenReleased = false;
 
         // set parent & update rigidbody
-        transform.parent = VRTK_DeviceFinder.PlayAreaTransform();
+        transform.parent = null;
         _rigidbody.isKinematic = true;
 
-        transform.localPosition = _localOriginPosition;
-        transform.rotation = _localOriginRotation;
+        transform.localPosition = _originPosition;
+        transform.rotation = _originRotation;
     }
     #endregion
     #endregion
