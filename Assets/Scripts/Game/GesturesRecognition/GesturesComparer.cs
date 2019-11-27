@@ -54,7 +54,7 @@ namespace GesturesRecognition
                     int indexUserGesture = deltaPosition + j;
 
                     // avoid out of bounds index
-                    if (indexUserGesture >= definedGesture.Length)
+                    if (indexUserGesture >= userGesture.Length)
                     {
                         break;
                     }
