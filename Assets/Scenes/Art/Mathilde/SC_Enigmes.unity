@@ -2315,6 +2315,18 @@ Prefab:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4831928893472152, guid: a829fa28b843f074d8273d7b3a39d0a2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831928893472152, guid: a829fa28b843f074d8273d7b3a39d0a2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831928893472152, guid: a829fa28b843f074d8273d7b3a39d0a2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a829fa28b843f074d8273d7b3a39d0a2, type: 2}
   m_IsPrefabAsset: 0
