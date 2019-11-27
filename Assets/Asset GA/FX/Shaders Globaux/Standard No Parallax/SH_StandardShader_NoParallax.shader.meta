@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 679087c5d43d64c4a9f618444c806985
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _FresnelsNoise: {fileID: 2800000, guid: 7d8de6af62ba61a4bac04f81042f3daa, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

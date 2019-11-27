@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FX_MA_Plantes
+  m_Shader: {fileID: 4800000, guid: ab912b9c22980e548865c81a8b79bc96, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FX_TX_Feu_Cheminee_PerlinNoise:
+        m_Texture: {fileID: 2800000, guid: 6c381ba84883b0344923d05f72b4bdfe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FX_TX_Feu_Cheminee_VoronoiNoise:
+        m_Texture: {fileID: 2800000, guid: 3314e815d37f2bb43b39945a6a763a23, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Test_01_Plantes_Color:
+        m_Texture: {fileID: 2800000, guid: 9f50643710f231a48a58c499d783b394, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Test_01_Plantes_Opacity:
+        m_Texture: {fileID: 2800000, guid: 538a094633b614241a8324a7076f9af8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Cutoff: 0.5
+    - _WindForce: 0.0015
+    - __dirty: 0
+    m_Colors: []

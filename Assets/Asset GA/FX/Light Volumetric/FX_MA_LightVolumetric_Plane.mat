@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FX_MA_LightVolumetric_Plane
+  m_Shader: {fileID: 4800000, guid: 5ee7b27e8892e144ba2d0afae522cb38, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _231:
+        m_Texture: {fileID: 2800000, guid: f6805ca5a24b861438357505f1d79336, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _6KrOP:
+        m_Texture: {fileID: 2800000, guid: 939cc1a61d40935479fe172e7bc01d28, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseAndMask:
+        m_Texture: {fileID: 2800000, guid: 4de8a9ebaae203d41bd8904894ef6b60, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SH_StandardShader_NoiseAndMask_01:
+        m_Texture: {fileID: 2800000, guid: 4b2875c36f2411e4b8a62bd3bc71c298, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: 83e251043f8cb2c4bb50f629374d1048, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Untitlecvcvd1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Untitlecvcvd2:
+        m_Texture: {fileID: 2800000, guid: 28985432fb23baf4b94b1ea5dc575dd4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _EmissivPower: 3
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 0.6650944, g: 0.75630665, b: 1, a: 0}

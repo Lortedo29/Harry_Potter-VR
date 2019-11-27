@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: c330311d34d0edc4e9b857d80fc05dcd
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _FlammeTexture: {fileID: 2800000, guid: c7b3ad7925347ca49b492c021997986c, type: 3}
+  - _VoronoiNoise: {fileID: 2800000, guid: 3314e815d37f2bb43b39945a6a763a23, type: 3}
+  - _PerlinNoise: {fileID: 2800000, guid: 6c381ba84883b0344923d05f72b4bdfe, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5886119a5c7b34d8872ab527ca3e1b, type: 3}
+  m_Name: UnityBuildSettings
+  m_EditorClassIdentifier: 
+  _basicSettings:
+    baseBuildFolder: bin
+    buildPath: $VERSION/
+    openFolderPostBuild: 1
+  _productParameters:
+    buildCounter: 34
+    lastGeneratedVersion: alpha1.1.0_day20_b32
+    version: alpha1.1.0_day$DAYSSINCE("November 6, 2019")_b$BUILD
+    autoGenerate: 1
+  _releaseTypeList:
+    releaseTypes:
+    - typeName: release
+      bundleIndentifier: 
+      companyName: 
+      productName: Harry Potter VR
+      developmentBuild: 1
+      allowDebugging: 0
+      enableHeadlessMode: 0
+      customDefines: BUILD_ARCH_WINDOWSX64;BUILD_PLATFORM_PC;BUILD_TYPE_RELEASE;UNITY_POST_PROCESSING_STACK_V2;VRTK_DEFINE_OCULUS_UTILITIES_1_12_0_OR_NEWER;VRTK_DEFINE_SDK_OCULUS;VRTK_DEFINE_SDK_OCULUS_AVATAR;VRTK_DEFINE_SDK_STEAMVR;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_1_OR_NEWER;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_2_OR_NEWER;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
+      sceneList:
+        enabledScenes:
+        - fileGUID: 74d3c0a763ec2ab4591d041ac13834c0
+        - fileGUID: 4c9fc6ce860ae5b4498bfe6dd144bea1
+        - fileGUID: 3c0c73fec8e0f6a46aba6221b15dd5bc
+  _platformList:
+    platforms:
+    - enabled: 1
+      distributionList:
+        distributions: []
+      architectures:
+      - target: 5
+        name: Windows x86
+        enabled: 0
+      - target: 19
+        name: Windows x64
+        enabled: 1
+      variants: []
+      platformName: PC
+      binaryNameFormat: '{0}.exe'
+      dataDirNameFormat: '{0}_Data'
+      targetGroup: 1
+  _projectConfigurations:
+    configSet:
+      _Buckets: 02000000ffffffff01000000
+      _HashCodes: ebddbd0ef10d7e574de9ec48
+      _Next: ffffffff00000000ffffffff
+      _Count: 3
+      _Version: 3
+      _FreeList: -1
+      _FreeCount: 0
+      _Keys:
+      - release/PC/Windows x64
+      - release/PC
+      - release
+      _Values:
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - release/PC/Windows x64
+      - enabled: 1
+        childKeys:
+        - release/PC
+    showViewOptions: 0
+    showConfigs: 0
+    showBuildInfo: 0
+    hideDisabled: 0
+    treeView: 0
+    selectedKeyChain: 
+  _preBuildActions:
+    buildActions: []
+  _postBuildActions:
+    buildActions: []

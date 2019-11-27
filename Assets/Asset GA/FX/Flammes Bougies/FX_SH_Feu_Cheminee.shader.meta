@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: c0e844fcc2d724e4091a551e71601235
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _FlammeTexture: {fileID: 2800000, guid: 796969597138c0442b991e701318a0b0, type: 3}
+  - _FX_SM_LightVolumetric_Mask_Noise: {fileID: 2800000, guid: 4de8a9ebaae203d41bd8904894ef6b60,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

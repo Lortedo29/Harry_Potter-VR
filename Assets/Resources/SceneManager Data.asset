@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d60ab27a795d8a4db88ce816795f985, type: 3}
+  m_Name: SceneManager Data
+  m_EditorClassIdentifier: 
+  _scenePath: Assets/Scenes/
+  _levelScenesAssets:
+  - {fileID: 102900000, guid: 9dc9acabd7e42e24693a8feedbe5e10e, type: 3}
+  - {fileID: 102900000, guid: aa2f830a6867942409c3cfd4c9ee3961, type: 3}
+  - {fileID: 102900000, guid: a0c03aaad3621d44db3751d415801792, type: 3}
+  - {fileID: 102900000, guid: cb0b61d84410a484f96fe4a625078a68, type: 3}
+  - {fileID: 102900000, guid: 63e923d08a06ae34791727d74dc2e921, type: 3}
+  - {fileID: 102900000, guid: c85b1d0b107ab9649ae996729c23f6be, type: 3}
+  _gameLogicScenesAssets:
+  - {fileID: 102900000, guid: 4c9fc6ce860ae5b4498bfe6dd144bea1, type: 3}
+  _levelScenesName:
+  - SC_Test_Portal
+  - SC_Tenn_Test
+  - SC_blockout_Flipendo
+  - SC_blockout_WingardiumLeviossa
+  - SC_test_gestures
+  - SC_Test_MagicHighlight
+  _gameLogicSceneName:
+  - SC_gameLogic

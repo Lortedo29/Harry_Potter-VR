@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SC_bootstrap.unity
+    guid: 74d3c0a763ec2ab4591d041ac13834c0
+  - enabled: 1
+    path: Assets/Scenes/SC_gameLogic.unity
+    guid: 4c9fc6ce860ae5b4498bfe6dd144bea1
+  - enabled: 1
+    path: Assets/Scenes/__internal_tests/SC_Test_Portal.unity
+    guid: 9dc9acabd7e42e24693a8feedbe5e10e
+  - enabled: 1
+    path: Assets/Scenes/BLOCKOUT/SC_blockout_Flipendo.unity
+    guid: a0c03aaad3621d44db3751d415801792
+  - enabled: 1
+    path: Assets/Scenes/BLOCKOUT/SC_blockout_WingardiumLeviossa_1.unity
+    guid: cb0b61d84410a484f96fe4a625078a68
+  - enabled: 1
+    path: Assets/Scenes/__internal_tests/SC_test_FX_Nico.unity
+    guid: d72641d82bc1f964cb31ca68ef1633cf
+  - enabled: 1
+    path: Assets/Scenes/__internal_tests/SC_Test_MagicHighlight.unity
+    guid: c85b1d0b107ab9649ae996729c23f6be
+  - enabled: 1
+    path: Assets/Scenes/Art/Mathilde/SC_Enigmes.unity
+    guid: 3c0c73fec8e0f6a46aba6221b15dd5bc
+  m_configObjects: {}

@@ -1,0 +1,12 @@
+{
+    "name": "Lortedo29.Utils.Editor",
+    "references": [
+        "Lortedo29.Utils"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
