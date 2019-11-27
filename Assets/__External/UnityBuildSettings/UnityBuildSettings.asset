@@ -16,8 +16,8 @@ MonoBehaviour:
     buildPath: $VERSION/
     openFolderPostBuild: 1
   _productParameters:
-    buildCounter: 34
-    lastGeneratedVersion: alpha1.1.0_day20_b32
+    buildCounter: 43
+    lastGeneratedVersion: alpha1.1.0_day21_b43
     version: alpha1.1.0_day$DAYSSINCE("November 6, 2019")_b$BUILD
     autoGenerate: 1
   _releaseTypeList:
@@ -34,7 +34,9 @@ MonoBehaviour:
         enabledScenes:
         - fileGUID: 74d3c0a763ec2ab4591d041ac13834c0
         - fileGUID: 4c9fc6ce860ae5b4498bfe6dd144bea1
+        - fileGUID: ea9140299d9174e428a9d2475d748029
         - fileGUID: 3c0c73fec8e0f6a46aba6221b15dd5bc
+        - fileGUID: 505a1fd746503c34fa62367cc6ae7b18
   _platformList:
     platforms:
     - enabled: 1
