@@ -18,24 +18,35 @@ public class CardsManager : MonoBehaviour
     #region Mono Callbacks
     void Start()
     {
-        StartCoroutine(LateStart());
-
         for (int i = 0; i < _cards.Length; i++)
         {
             _cards[i].gameObject.SetActive(false);
         }
     }
 
-    IEnumerator LateStart()
+    void Update()
     {
-        yield return new WaitForEndOfFrame();
+        InitializeControllers();
+    }
 
-        // initialize controller
-        _leftController = VRTK_DeviceFinder.DeviceTransform(VRTK_DeviceFinder.Devices.LeftController).GetComponent<VRTK_ControllerEvents>();
-        _rightController = VRTK_DeviceFinder.DeviceTransform(VRTK_DeviceFinder.Devices.RightController).GetComponent<VRTK_ControllerEvents>();
+    void InitializeControllers()
+    {
+        if (_leftController == null)
+        {
+            Debug.Log("CardsManager > Initialize left controller");
 
-        _leftController.ButtonOnePressed += (object sender, ControllerInteractionEventArgs e) => SwitchCardDisplay(_leftController);
-        _rightController.ButtonOnePressed += (object sender, ControllerInteractionEventArgs e) => SwitchCardDisplay(_rightController);
+            _leftController = VRTK_DeviceFinder.DeviceTransform(VRTK_DeviceFinder.Devices.LeftController).GetComponent<VRTK_ControllerEvents>();
+            _leftController.ButtonOnePressed += (object sender, ControllerInteractionEventArgs e) => SwitchCardDisplay(_leftController);
+
+        }
+
+        if (_rightController == null)
+        {
+            Debug.Log("CardsManager > Initialize right controller");
+
+            _rightController = VRTK_DeviceFinder.DeviceTransform(VRTK_DeviceFinder.Devices.RightController).GetComponent<VRTK_ControllerEvents>();
+            _rightController.ButtonOnePressed += (object sender, ControllerInteractionEventArgs e) => SwitchCardDisplay(_rightController);
+        }
     }
     #endregion
 
