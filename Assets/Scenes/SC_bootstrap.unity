@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e4b65a6324b36f4ba584af2d46a77d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneToLoad: SC_Enigmes
+  _sceneToLoad: SC_HUB_colider
 --- !u!4 &545372190
 Transform:
   m_ObjectHideFlags: 0
@@ -334,15 +334,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4306952725889010, guid: a829fa28b843f074d8273d7b3a39d0a2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.98
+      value: 0.411
       objectReference: {fileID: 0}
     - target: {fileID: 4306952725889010, guid: a829fa28b843f074d8273d7b3a39d0a2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.047
       objectReference: {fileID: 0}
     - target: {fileID: 4306952725889010, guid: a829fa28b843f074d8273d7b3a39d0a2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.14
+      value: 2.457
       objectReference: {fileID: 0}
     - target: {fileID: 4306952725889010, guid: a829fa28b843f074d8273d7b3a39d0a2, type: 2}
       propertyPath: m_LocalRotation.x

@@ -191,6 +191,9 @@ public class MagicInteractable : MonoBehaviour
 
     public void Push(float pushForce)
     {
+        if (GetComponent<VRTK_InteractableObject>().IsGrabbed())
+            return;
+
         OnPush?.Invoke(this);
 
         var fx = ObjectPooler.Instance.SpawnFromPool("FX_Push_Object", transform.position, transform.rotation).transform;

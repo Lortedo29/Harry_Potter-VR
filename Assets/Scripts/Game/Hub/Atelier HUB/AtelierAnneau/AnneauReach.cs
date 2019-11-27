@@ -5,7 +5,6 @@ using UnityEngine;
 public class AnneauReach : MonoBehaviour {
 
     [SerializeField] private GameObject _plume;
-    [SerializeField] private AudioClip _reachAnneau;
 
     private void OnTriggerEnter(Collider other)
     {
