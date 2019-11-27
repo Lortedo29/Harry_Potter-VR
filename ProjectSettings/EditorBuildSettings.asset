@@ -24,9 +24,15 @@ EditorBuildSettings:
     path: Assets/Scenes/__internal_tests/SC_test_FX_Nico.unity
     guid: d72641d82bc1f964cb31ca68ef1633cf
   - enabled: 1
+    path: Assets/Scenes/Art/Mathilde/SC_HUB_colider.unity
+    guid: ea9140299d9174e428a9d2475d748029
+  - enabled: 1
     path: Assets/Scenes/__internal_tests/SC_Test_MagicHighlight.unity
     guid: c85b1d0b107ab9649ae996729c23f6be
   - enabled: 1
     path: Assets/Scenes/Art/Mathilde/SC_Enigmes.unity
     guid: 3c0c73fec8e0f6a46aba6221b15dd5bc
+  - enabled: 1
+    path: Assets/Scenes/Art/Mathilde/SC_HUB.unity
+    guid: 095619c47ba59e143a299ed8664d8113
   m_configObjects: {}
