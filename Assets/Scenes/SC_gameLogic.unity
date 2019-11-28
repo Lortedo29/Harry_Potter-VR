@@ -948,7 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a6fd29878f1834c8ee6c98e4901040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardDistanceToHand: 0.28
+  _cardDistanceToHand: 0.32
   _cards:
   - {fileID: 1225839813}
   - {fileID: 1305376295}
