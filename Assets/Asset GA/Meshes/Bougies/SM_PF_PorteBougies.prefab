@@ -53,6 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4075228743804898}
+  - component: {fileID: 64879148734681160}
   m_Layer: 0
   m_Name: SM_PF_PorteBougies
   m_TagString: Untagged
@@ -100,8 +101,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1141191450001344}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.944, y: 0, z: 8.169}
+  m_LocalRotation: {x: -0, y: 0.98002994, z: -0, w: -0.19885036}
+  m_LocalPosition: {x: -10.383, y: 0.7144366, z: 1.005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4545383925132362}
@@ -110,7 +111,7 @@ Transform:
   - {fileID: 4097710710620376}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 202.939, z: 0}
 --- !u!4 &4097710710620376
 Transform:
   m_ObjectHideFlags: 1
@@ -247,6 +248,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1085365778325758}
   m_Mesh: {fileID: 4300002, guid: 3f79f846cfc0e8b4ca324f588264287e, type: 3}
+--- !u!64 &64879148734681160
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1141191450001344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
 --- !u!198 &198740890523335562
 ParticleSystem:
   m_ObjectHideFlags: 1
