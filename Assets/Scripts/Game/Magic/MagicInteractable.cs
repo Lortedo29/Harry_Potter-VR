@@ -85,7 +85,7 @@ public class MagicInteractable : MonoBehaviour
                 _levitationFx = ObjectPooler.Instance.SpawnFromPool("FX_Levitation_Object", transform.position, transform.rotation).transform;
                 _levitationFx.parent = transform;
 
-                _rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;                
+                _rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;
 
                 OnStartLevitate?.Invoke(this);
             }
@@ -158,7 +158,14 @@ public class MagicInteractable : MonoBehaviour
             float difference = targetFresnelValue - currentFresnelValue;
             float lerpTimeDifference = Mathf.Abs(difference * FRESNEL_ACTIVATION_LERP_TIME);
 
-            if (_lerpCoroutine != null) StopCoroutine(_lerpCoroutine);
+            try
+            {
+                if (_lerpCoroutine != null) StopCoroutine(_lerpCoroutine);
+            }
+            catch
+            {
+
+            }
 
             _lerpCoroutine = new Timer(this, lerpTimeDifference, (float completion) =>
             {
@@ -174,7 +181,7 @@ public class MagicInteractable : MonoBehaviour
         if (_isFreezed)
             return;
 
-        
+
         OnFreeze?.Invoke(this);
 
         _isFreezed = true;
