@@ -85,7 +85,7 @@ public class MagicInteractable : MonoBehaviour
                 _levitationFx = ObjectPooler.Instance.SpawnFromPool("FX_Levitation_Object", transform.position, transform.rotation).transform;
                 _levitationFx.parent = transform;
 
-                _rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;
+                _rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;                
 
                 OnStartLevitate?.Invoke(this);
             }
