@@ -116,6 +116,9 @@ public class SpellLevitation : Singleton<SpellLevitation>
     #region Private Methods
     void ManageHaptics()
     {
+		if (Wand.Instance.ControllerGrabbing == null)
+			return;
+		
         if (Vector3.Distance(_hapticsLastPosition, _parentTarget.position) >= THRESHOLD_DISTANCE_HAPTIC_EMIT)
         {
             var controllerReference = VRTK_ControllerReference.GetControllerReference(Wand.Instance.ControllerGrabbing.gameObject);
