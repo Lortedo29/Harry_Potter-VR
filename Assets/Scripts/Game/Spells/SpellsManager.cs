@@ -63,21 +63,25 @@ public class SpellsManager : Singleton<SpellsManager>
 
             case SpellType.Pushing:
                 target.Push(_pushForce);
-
-                var controllerReference = VRTK_ControllerReference.GetControllerReference(Wand.Instance.ControllerGrabbing.gameObject);
-                VRTK_ControllerHaptics.TriggerHapticPulse(controllerReference, 1);
                 break;
 
             case SpellType.Freezer:
                 target.Freeze(_freezeTime);
-
-                controllerReference = VRTK_ControllerReference.GetControllerReference(Wand.Instance.ControllerGrabbing.gameObject);
-                VRTK_ControllerHaptics.TriggerHapticPulse(controllerReference, 1);
                 break;
 
             case SpellType.SceneReload:
                 ReloadWithFade();
                 break;
+        }
+
+        // manage haptics
+        if (spellType == SpellType.Freezer || spellType == SpellType.Pushing)
+        {
+            if (Wand.Instance.ControllerGrabbing == null)
+                return;
+
+            var controllerReference = VRTK_ControllerReference.GetControllerReference(Wand.Instance.ControllerGrabbing.gameObject);
+            VRTK_ControllerHaptics.TriggerHapticPulse(controllerReference, 1);
         }
     }
 
