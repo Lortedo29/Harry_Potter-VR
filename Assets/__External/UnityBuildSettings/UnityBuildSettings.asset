@@ -16,8 +16,8 @@ MonoBehaviour:
     buildPath: $VERSION/
     openFolderPostBuild: 1
   _productParameters:
-    buildCounter: 43
-    lastGeneratedVersion: alpha1.1.0_day21_b43
+    buildCounter: 54
+    lastGeneratedVersion: alpha1.1.0_day22_b54
     version: alpha1.1.0_day$DAYSSINCE("November 6, 2019")_b$BUILD
     autoGenerate: 1
   _releaseTypeList:
@@ -26,7 +26,7 @@ MonoBehaviour:
       bundleIndentifier: 
       companyName: 
       productName: Harry Potter VR
-      developmentBuild: 1
+      developmentBuild: 0
       allowDebugging: 0
       enableHeadlessMode: 0
       customDefines: BUILD_ARCH_WINDOWSX64;BUILD_PLATFORM_PC;BUILD_TYPE_RELEASE;UNITY_POST_PROCESSING_STACK_V2;VRTK_DEFINE_OCULUS_UTILITIES_1_12_0_OR_NEWER;VRTK_DEFINE_SDK_OCULUS;VRTK_DEFINE_SDK_OCULUS_AVATAR;VRTK_DEFINE_SDK_STEAMVR;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_1_OR_NEWER;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_2_OR_NEWER;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
@@ -36,7 +36,6 @@ MonoBehaviour:
         - fileGUID: 4c9fc6ce860ae5b4498bfe6dd144bea1
         - fileGUID: ea9140299d9174e428a9d2475d748029
         - fileGUID: 3c0c73fec8e0f6a46aba6221b15dd5bc
-        - fileGUID: 505a1fd746503c34fa62367cc6ae7b18
   _platformList:
     platforms:
     - enabled: 1

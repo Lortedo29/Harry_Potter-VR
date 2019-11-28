@@ -10,7 +10,7 @@ namespace GesturesRecognition
     public class Gesture : ScriptableObject
     {
         [SerializeField] private Orientation[] _mainGesture = new Orientation[0];
-        [SerializeField] private List<MDOrientationArray> _smoothedGestures = new List<MDOrientationArray>();
+        [SerializeField] [HideInInspector] private List<MDOrientationArray> _smoothedGestures = new List<MDOrientationArray>();
 
         public Orientation[] MainGesture
         {

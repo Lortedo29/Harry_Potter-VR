@@ -201,7 +201,8 @@ public class MagicInteractable : MonoBehaviour
 
     public void Push(float pushForce)
     {
-        if (GetComponent<VRTK_InteractableObject>().IsGrabbed())
+        // if we have an interactable object, check if he's not grabbed
+        if (GetComponent<VRTK_InteractableObject>() != null && GetComponent<VRTK_InteractableObject>().IsGrabbed())
             return;
 
         OnPush?.Invoke(this);
