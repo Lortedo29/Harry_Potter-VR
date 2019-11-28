@@ -5,7 +5,7 @@ using UnityEngine;
 public class Horloge : MonoBehaviour
 {
     [SerializeField] private GameObject _grosseAiguille, _petiteAiguille;
-    private bool _declanchementAtelier = false;
+    public static bool _declanchementAtelier = false;
     private bool _petiteAiguilleRotate = false;
     [SerializeField] private float _needleSpeed = 1f;
 
@@ -34,7 +34,7 @@ public class Horloge : MonoBehaviour
         }
         else
         {
-            _needleSpeed = 0.3f;
+            _needleSpeed = 0.7f;
         }
 	}
     private void OnTriggerStay(Collider other)
@@ -43,6 +43,7 @@ public class Horloge : MonoBehaviour
         {
             _declanchementAtelier = false;
             _petiteAiguilleRotate = false;
+            ManagerAudio.Instance.PlaySound(ManagerAudio.Sound.WinSound);
         }
     }
 }
