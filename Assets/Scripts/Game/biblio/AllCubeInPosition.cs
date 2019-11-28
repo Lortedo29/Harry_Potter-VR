@@ -12,7 +12,7 @@ public class AllCubeInPosition : MonoBehaviour {
     {
         if(_bookInBiblioNumber >= 5)
         {
-            _myOrb.SetActive(true);
+            ManagerAudio.Instance.PlaySound(ManagerAudio.Sound.WinSound);
         }
     }
 }
