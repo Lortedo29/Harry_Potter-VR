@@ -12,10 +12,10 @@ public class Horloge : MonoBehaviour
 	
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            _declanchementAtelier = true;
-        }
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    _declanchementAtelier = true;
+        //}
 		if(_declanchementAtelier == true)
         {
             _declanchementAtelier = false;
