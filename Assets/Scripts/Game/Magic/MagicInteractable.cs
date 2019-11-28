@@ -85,10 +85,13 @@ public class MagicInteractable : MonoBehaviour
                 _levitationFx = ObjectPooler.Instance.SpawnFromPool("FX_Levitation_Object", transform.position, transform.rotation).transform;
                 _levitationFx.parent = transform;
 
+                _rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;
+
                 OnStartLevitate?.Invoke(this);
             }
             else
             {
+                _rigidbody.collisionDetectionMode = CollisionDetectionMode.Discrete;
                 SetFresnelColorToDefault();
 
                 if (_levitationFx != null)
@@ -200,6 +203,8 @@ public class MagicInteractable : MonoBehaviour
         fx.parent = transform;
 
         SetFresnelColor(SpellType.Pushing);
+
+        _rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;
 
         ManagerAudio.Instance.PlaySound(ManagerAudio.Sound.Push);
         this.ExecuteAfterTime(PUSH_DELAY, () =>
