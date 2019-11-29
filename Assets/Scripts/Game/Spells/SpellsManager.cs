@@ -27,6 +27,7 @@ public class SpellsManager : Singleton<SpellsManager>
         if (spellType == null)
         {
             Debug.LogWarning("Unrecognized spellType");
+            Wand.Instance.SpellTarget = null;
         }
         else
         {

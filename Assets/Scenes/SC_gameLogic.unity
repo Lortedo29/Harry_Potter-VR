@@ -1532,6 +1532,7 @@ MonoBehaviour:
   - gesture:
     - {fileID: 11400000, guid: 9b4075682e78acb4e8269b286d473d01, type: 2}
     - {fileID: 11400000, guid: 05ca3a1b098355c479b5f9db5b7036e1, type: 2}
+    - {fileID: 11400000, guid: 098ba1be8c5082948a3e6a09cfbdaa97, type: 2}
   - gesture:
     - {fileID: 11400000, guid: b898b06e26606e749b3e2886d7d35101, type: 2}
   - gesture:

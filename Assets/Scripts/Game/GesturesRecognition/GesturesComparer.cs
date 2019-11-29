@@ -27,6 +27,8 @@ namespace GesturesRecognition
         {
             for (int spellIndex = 0; spellIndex < _spellGestures.Count; spellIndex++)
             {
+                SpellType spellType = (SpellType)(spellIndex);
+
                 for (int i = 0; i < _spellGestures[spellIndex].gesture.Length; i++)
                 {
                     if (_spellGestures[i] == null)
@@ -39,16 +41,14 @@ namespace GesturesRecognition
                         return null;
 
                     if (IsGestureValid(gesture, _spellGestures[spellIndex].gesture[i].MainGesture))
-                    {
-                        SpellType spellType = (SpellType)(spellIndex);
+                    {                        
                         return spellType;
                     }
 
                     foreach (var smoothedGesture in _spellGestures[spellIndex].gesture[i].SmoothedGestures)
                     {
                         if (IsGestureValid(gesture, smoothedGesture.orientations))
-                        {
-                            SpellType spellType = (SpellType)(spellIndex);
+                        {                            
                             return spellType;
                         }
                     }
