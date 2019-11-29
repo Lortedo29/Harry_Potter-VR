@@ -106,6 +106,8 @@ public class SpellLevitation : Singleton<SpellLevitation>
 
         _target.GetComponent<MagicInteractable>().IsLevitating = false;
 
+        Wand.Instance.SpellTarget = null;
+
         WandFeedback.Instance.StopSpellFX(SpellType.Levitation);
 
         _target = null;

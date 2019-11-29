@@ -61,14 +61,11 @@ public class Wand : Singleton<Wand>
         {
             return _spellTarget;
         }
-
-
-#if UNITY_EDITOR
+      
         set
         {
             _spellTarget = value;
         }
-#endif
     }
     #endregion
 
