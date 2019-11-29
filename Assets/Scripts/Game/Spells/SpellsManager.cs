@@ -63,10 +63,12 @@ public class SpellsManager : Singleton<SpellsManager>
 
             case SpellType.Pushing:
                 target.Push(_pushForce);
+                Wand.Instance.SpellTarget = null;
                 break;
 
             case SpellType.Freezer:
                 target.Freeze(_freezeTime);
+                Wand.Instance.SpellTarget = null;
                 break;
 
             case SpellType.SceneReload:
