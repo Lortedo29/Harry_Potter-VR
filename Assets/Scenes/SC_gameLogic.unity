@@ -1529,10 +1529,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spellGestures:
-  - {fileID: 11400000, guid: 9b4075682e78acb4e8269b286d473d01, type: 2}
-  - {fileID: 11400000, guid: b898b06e26606e749b3e2886d7d35101, type: 2}
-  - {fileID: 11400000, guid: fe3c4b14e3c373a46a0cd57974da6247, type: 2}
-  - {fileID: 11400000, guid: 4642339f7366c1245bfc5c80bf6eb3dc, type: 2}
+  - gesture:
+    - {fileID: 11400000, guid: 9b4075682e78acb4e8269b286d473d01, type: 2}
+    - {fileID: 11400000, guid: 05ca3a1b098355c479b5f9db5b7036e1, type: 2}
+  - gesture:
+    - {fileID: 11400000, guid: b898b06e26606e749b3e2886d7d35101, type: 2}
+  - gesture:
+    - {fileID: 11400000, guid: fe3c4b14e3c373a46a0cd57974da6247, type: 2}
+  - gesture:
+    - {fileID: 11400000, guid: 4642339f7366c1245bfc5c80bf6eb3dc, type: 2}
 --- !u!114 &2146030065
 MonoBehaviour:
   m_ObjectHideFlags: 0
