@@ -11,8 +11,8 @@ namespace GesturesRecognition
     {
         #region Fields
         public readonly static float DISTANCE_THRESHOLD = 0.01f;
-        public readonly static int ORIENTATION_SAMPLES_COUNT = 15;
-        public readonly static float PERCENT_TO_VALIDATE_ORIENTATION_SAMPLES = 0.9f; // 90% of the sample are the same orientation
+        public readonly static int ORIENTATION_SAMPLES_COUNT = 10;
+        public readonly static float PERCENT_TO_VALIDATE_ORIENTATION_SAMPLES = 0.8f; // 80% of the sample are the same orientation
 
         [SerializeField] private bool _debugLogOrientation = false;
 
