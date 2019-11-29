@@ -10,33 +10,47 @@ namespace GesturesRecognition
 {
     public class GesturesComparer : Singleton<GesturesComparer>
     {
-        [SerializeField, EnumNamedArray(typeof(SpellType))] private Gesture[] _spellGestures;
+        [SerializeField, EnumNamedArray(typeof(SpellType))] private List<MDOrientationArray> _spellGestures;
+
+        [System.Serializable]
+        public class MDOrientationArray
+        {
+            public Gesture[] gesture;
+
+            public MDOrientationArray(Gesture[] gesture)
+            {
+                this.gesture = gesture;
+            }
+        }
 
         public SpellType? CompareGesture(Orientation[] gesture)
         {
-            for (int i = 0; i < _spellGestures.Length; i++)
+            for (int spellIndex = 0; spellIndex < _spellGestures.Count; spellIndex++)
             {
-                if (_spellGestures[i] == null)
+                for (int i = 0; i < _spellGestures[spellIndex].gesture.Length; i++)
                 {
-                    Debug.LogError("Gesture isn't linked in GesturesComparer in SC_gameLogic!");
-                    continue;
-                }
-
-                if (gesture.Length == 0)
-                    return null;
-
-                if (IsGestureValid(gesture, _spellGestures[i].MainGesture))
-                {
-                    SpellType spellType = (SpellType)(i);
-                    return spellType;
-                }
-
-                foreach (var smoothedGesture in _spellGestures[i].SmoothedGestures)
-                {
-                    if (IsGestureValid(gesture, smoothedGesture.orientations))
+                    if (_spellGestures[i] == null)
                     {
-                        SpellType spellType = (SpellType)(i);
+                        Debug.LogError("Gesture isn't linked in GesturesComparer in SC_gameLogic!");
+                        continue;
+                    }
+
+                    if (gesture.Length == 0)
+                        return null;
+
+                    if (IsGestureValid(gesture, _spellGestures[spellIndex].gesture[i].MainGesture))
+                    {
+                        SpellType spellType = (SpellType)(spellIndex);
                         return spellType;
+                    }
+
+                    foreach (var smoothedGesture in _spellGestures[spellIndex].gesture[i].SmoothedGestures)
+                    {
+                        if (IsGestureValid(gesture, smoothedGesture.orientations))
+                        {
+                            SpellType spellType = (SpellType)(spellIndex);
+                            return spellType;
+                        }
                     }
                 }
             }
@@ -80,12 +94,12 @@ namespace GesturesRecognition
 
         void OnValidate()
         {
-            int enumLength = Enum.GetValues(typeof(SpellType)).Length;
+            //int enumLength = Enum.GetValues(typeof(SpellType)).Length;
 
-            if (_spellGestures.Length != enumLength)
-            {
-                Array.Resize(ref _spellGestures, enumLength);
-            }
+            //if (_spellGestures.Count != enumLength)
+            //{
+            //    Array.Resize(ref _spellGestures, enumLength);
+            //}
         }
     }
 }
